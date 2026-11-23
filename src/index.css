@@ -2,11 +2,11 @@
 @import "tailwindcss";
 @theme {
   --font-sans: "DM Sans", Arial, sans-serif;
-  --color-purple: #42076a;
-  --color-purple-dark: #26043f;
+  --color-purple: #2E028B;
+  --color-purple-dark: #2E028B;
   --color-amber: #ffab00;
   --color-ink: #17132b;
-  --color-lilac: #f5f1fb;
+  --color-lilac: #f3f0fc;
 }
 @layer base {
   html {
@@ -60,7 +60,7 @@
   }
   ::selection {
     background: #ffd278;
-    color: #26043f;
+    color: var(--color-purple);
   }
 }
 @layer components {
@@ -69,7 +69,7 @@
   }
   .site-header {
     @apply sticky top-0 z-50 text-white;
-    background: linear-gradient(110deg, #30054b, #49096b 60%, #300448);
+    background: var(--color-purple);
     border-bottom: 1px solid #ffffff15;
   }
   .header-inner {
@@ -157,12 +157,7 @@
   }
   .home-hero {
     @apply overflow-hidden text-white;
-    background: radial-gradient(
-      ellipse at 65% 30%,
-      #5b0a83 0%,
-      #400560 48%,
-      #29043e 100%
-    );
+    background: var(--color-purple);
   }
   .hero-inner {
     @apply relative min-h-[570px];
@@ -199,7 +194,7 @@
     border-radius: 52% 0 0 0;
     background: #ffaf00;
     transform: skewX(-14deg);
-    box-shadow: -14px -6px 0 #7a11ad;
+    box-shadow: -14px -6px 0 var(--color-purple);
   }
   .person {
     @apply absolute bottom-0 overflow-hidden;
@@ -282,7 +277,7 @@
   }
   .audience-card:hover {
     transform: translateY(-3px);
-    background: #ece4f7;
+    background: #e8e1f8;
   }
   .audience-card > .icon {
     @apply mb-4 size-10 text-purple;
@@ -319,7 +314,7 @@
   }
   .roadmap {
     @apply mb-10 grid items-center gap-5 rounded-[28px] px-7 py-6 text-white lg:grid-cols-[1.15fr_1.5fr_1.05fr_1.15fr];
-    background: linear-gradient(110deg, #4f076b, #300348);
+    background: var(--color-purple);
   }
   .roadmap > div {
     @apply flex items-center gap-4;
@@ -366,7 +361,7 @@
   }
   .icon-tile {
     @apply mb-4 inline-flex size-13 items-center justify-center rounded-2xl text-white;
-    background: linear-gradient(140deg, #670b91, #3b045b);
+    background: var(--color-purple);
   }
   .icon-tile .icon {
     @apply size-7;
@@ -897,7 +892,7 @@
     padding: 20px 28px 28px;
     max-height: calc(100dvh - 78px);
     overflow-y: auto;
-    background: #31054c;
+    background: var(--color-purple-dark);
     box-shadow: 0 20px 30px #20003230;
   }
   .site-header nav.is-open {
